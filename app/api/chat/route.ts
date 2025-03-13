@@ -3,10 +3,9 @@ import { NextResponse } from "next/server"
 export async function POST(req: Request) {
   try {
     const { messages } = await req.json()
-    
     const lastMessage = messages[messages.length - 1].content
     
-    // Simple mock response instead of using AI SDK
+    // Simple mock response
     const response = `This is a mock response to: "${lastMessage}". The AI integration will be added later.`
     
     return NextResponse.json({ response })
