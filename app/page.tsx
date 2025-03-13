@@ -1,11 +1,3 @@
-import type { Metadata } from "next"
-import { ChatInterface } from "@/components/chat-interface"
-
-export const metadata: Metadata = {
-  title: "Claimly - Find Your Class Action Claims",
-  description: "Automatically find and file class action claims you're eligible for",
-}
-
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
@@ -13,7 +5,7 @@ export default function Home() {
         <div className="container flex h-16 items-center">
           <div className="mr-4 flex">
             <a className="flex items-center space-x-2" href="/">
-              <span className="text-xl font-bold gradient-text">Claimly</span>
+              <span className="text-xl font-bold">Claimly</span>
             </a>
           </div>
           <nav className="flex flex-1 items-center justify-end space-x-4">
@@ -33,7 +25,7 @@ export default function Home() {
       <div className="container flex-1 items-center py-6 md:py-12">
         <div className="mx-auto max-w-3xl">
           <div className="mb-8 text-center">
-            <h1 className="text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:leading-[1.1] gradient-text">
+            <h1 className="text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:leading-[1.1]">
               Find & Claim Your Settlement Money
             </h1>
             <p className="mt-4 text-lg text-muted-foreground md:text-xl">
@@ -42,7 +34,10 @@ export default function Home() {
             </p>
           </div>
 
-          <ChatInterface />
+          {/* Chat interface removed for quick fix */}
+          <div className="p-8 text-center border rounded-lg">
+            <p>Chat interface will be available soon.</p>
+          </div>
         </div>
       </div>
 
