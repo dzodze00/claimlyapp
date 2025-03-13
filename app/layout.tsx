@@ -4,7 +4,6 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "Claimly - Find Your Class Action Claims",
   description: "Automatically find and file class action claims you're eligible for",
-  metadataBase: new URL(process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000"),
 }
 
 export default function RootLayout({
@@ -14,9 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   )
 }
